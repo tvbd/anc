@@ -190,11 +190,11 @@ function ancMedia() {
 //4 YT 
 '<div class="lazyYt" '+ x + ' ><div class="play"></div></div>',
 //5 jw
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/player/jw.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/jw.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 //6 fw
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/player/fw.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/fw.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 7 playerjs
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/player/js.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/js.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 8 vjs
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/vjs.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 9 kaltura
