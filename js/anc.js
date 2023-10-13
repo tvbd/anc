@@ -190,7 +190,7 @@ function ancMedia() {
 //4 YT 
 '<div class="lazyYt" '+ x + ' ><div class="play"></div></div>',
 //5 jw
-'<div id="player" class="jw-video-player" data-width="100%" data-height="100%"  data-name="" data-thumbnailUrl="'+imgload+'" data-contentUrl='+x+'></div>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/player/jw.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 //6 fw
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/player/fw.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 7 playerjs
