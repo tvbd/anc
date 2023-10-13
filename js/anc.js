@@ -1,6 +1,6 @@
 var img_player=document.querySelectorAll("#anc_data")[0].src,ancplayer={load:{width:"100%",height:"100%",player:"",proxy:"",skin:"",getlink:"",imgload:"//1.bp.blogspot.com/-zpoFzRJfpLA/YS9g_Fzen2I/AAAAAAAACVE/8tZjL-2cegsWg9mYJcdwh8xWrdRNEzKtwCLcBGAsYHQ/s0/itbd71.png",autoplay:"true",embedplay:"0",site:"ITBD71"},
-sv:{list_sv:"anc.mb,anc.em,anc.cp,data-plyr-embed-id,data-embed,anc.jw,anc.fw,anc.js,anc.vjs,anc.rd,anc.cri,anc.ban,anc.ov,anc.ply,stream.crichd.vip",
-ten_sv:"MOBILE:,EM:,CP:,PLY:,YT:,JW:,FW:,JS:,VJS:,RD:,CRI:,BAN:,OVN:,PLY:,CRIVIP:"}};
+sv:{list_sv:"anc.mb,anc.em,anc.cp,data-plyr-embed-id,data-embed,anc.jw,anc.fw,anc.js,anc.vjs,anc.kal,anc.cri,anc.ban,anc.ov,anc.ply,stream.crichd.vip",
+ten_sv:"MOBILE:,EM:,CP:,PLY:,YT:,JW:,FW:,JS:,VJS:,KAL:,CRI:,BAN:,OVN:,PLY:,CRIVIP:"}};
 
 
 function ancMedia() {
@@ -167,7 +167,7 @@ function ancMedia() {
         if (x.indexOf(sv[6]) != -1){x = x.replace(/anc\.fw\/http/gi,"http");obj = DBOj(x)[6]} //fw
         if (x.indexOf(sv[7]) != -1){x = x.replace(/anc\.js\/http/gi,"http");obj = DBOj(x)[7]} //js
         if (x.indexOf(sv[8]) != -1){x = x.replace(/anc\.vjs\/http/gi,"http");obj = DBOj(x)[8]} //vjs
-        if (x.indexOf(sv[9]) != -1){x = x.replace(/anc\.rd\/http/gi,"http");obj = DBOj(x)[9]} //RD
+        if (x.indexOf(sv[9]) != -1){x = x.replace(/anc\.kal\/http/gi,"http");obj = DBOj(x)[9]} //kaltua
         if (x.indexOf(sv[10]) != -1){x = x.replace(/anc\.cri\//gi,"");obj = DBOj(x)[10]} //crichd
         if (x.indexOf(sv[11]) != -1){x = x.replace(/anc\.ban\/http/gi, "http");  obj = DBOj(x)[11]; } //embed ban
         if (x.indexOf(sv[12]) != -1){x = x.replace(/anc\.ov\/http/gi, "http");  obj = DBOj(x)[12]; } //oven player
@@ -184,7 +184,7 @@ function ancMedia() {
 // 1 EM 
 '<iframe class="player" src=' + x + ' autoplay=' + auto + ' width="100%" height="100%" allowfullscreen="true" allowScriptAccess="always" frameborder="0" scrolling="yes"/></iframe>',
 // 2 clapper 
-'<iframe class="player" width="100%" height="100%"  src="/p/cphd.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/cphd.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 //3 PLY
 '<link href="//cdn.plyr.io/3.6.8/plyr.css" rel="stylesheet"></link><div id="player" data-plyr-provider="youtube" ' + x + ' ></div>',
 //4 YT 
@@ -192,23 +192,21 @@ function ancMedia() {
 //5 jw
 '<div id="player" class="jw-video-player" data-width="100%" data-height="100%"  data-name="" data-thumbnailUrl="'+imgload+'" data-contentUrl='+x+'></div>',
 //6 fw
-'<link rel="stylesheet" href="//releases.flowplayer.org/7.2.7/skin/skin.css"/><div data-live="true" data-ratio="0.5625" data-share="false" class="flowplayer" id="player"><video data-title="Live stream"><source type="application/x-mpegurl"  src="'+x+'"></video></div>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/player/fw.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 7 playerjs
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/tvbd.github.io/master/player/js.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/player/js.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 8 vjs
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/tvbd.github.io/master/player/vjshd.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
-// 9 rd
-'<iframe class="player" width="100%" height="100%"  src="/p/rad.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/vjs.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+// 9 kaltura
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/kaltura.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 10 cri 
-'<iframe class="player" src="//yourtehzeeb.com/crichd.php?player=desktop&live='+x +'" width="100%" height="100%" scrolling="no" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+'<iframe class="player" src="//raw.githack.com/tvbd/tvbd.github.io/master/player/cri.html?sv='+x +'" width="100%" height="100%" scrolling="no" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
 // 11 ban
 '<iframe class="player" width="100%" height="100%" src="//raw.githack.com/tvbd/tvbd.github.io/master/player/em.html?sv=' + x + '" scrolling="no" allowfullscreen="true" allowScriptAccess="always" frameborder="0"></iframe>',
 // 12 oven 
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/tvbd.github.io/master/player/oven.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/oven.html='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 13 cp
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/tvbd.github.io/master/player//cp.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
-// 14 cricchd
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/tvbd.github.io/master/player/crichd.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/cp.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 
         ];
     }
