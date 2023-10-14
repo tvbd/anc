@@ -204,7 +204,7 @@ function ancMedia() {
 // 11 ban
 '<iframe class="player" width="100%" height="100%" src="//raw.githack.com/tvbd/tvbd.github.io/master/player/em.html?sv=' + x + '" scrolling="no" allowfullscreen="true" allowScriptAccess="always" frameborder="0"></iframe>',
 // 12 oven 
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/oven.html='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/oven.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 13 cp
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/clapper.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 
