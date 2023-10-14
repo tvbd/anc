@@ -1,7 +1,6 @@
-var img_player=document.querySelectorAll("#anc_data")[0].src,ancplayer={load:{width:"100%",height:"100%",player:"",proxy:"",skin:"",getlink:"",imgload:"//1.bp.blogspot.com/-zpoFzRJfpLA/YS9g_Fzen2I/AAAAAAAACVE/8tZjL-2cegsWg9mYJcdwh8xWrdRNEzKtwCLcBGAsYHQ/s0/itbd71.png",autoplay:"true",embedplay:"0",site:"ITBD71"},
-sv:{list_sv:"anc.mb,anc.em,anc.cp,data-plyr-embed-id,data-embed,anc.jw,anc.fw,anc.js,anc.vjs,anc.kal,anc.cri,anc.ban,anc.ov,anc.ply,stream.crichd.vip",
-ten_sv:"MOBILE:,EM:,CP:,PLY:,YT:,JW:,FW:,JS:,VJS:,KAL:,CRI:,BAN:,OVN:,PLY:,CRIVIP:"}};
-
+var img_player=document.querySelectorAll("#anc_data")[0].src,ancplayer={load:{width:"100%",height:"100%",player:"",proxy:"",skin:"",getlink:"",imgload:"//1.bp.blogspot.com/-zpoFzRJfpLA/YS9g_Fzen2I/AAAAAAAACVE/8tZjL-2cegsWg9mYJcdwh8xWrdRNEzKtwCLcBGAsYHQ/s0/itbd71.png",autoplay:"true",embedplay:"0",site:"TVBD"},
+sv:{list_sv:"anc.mb,anc.em,anc.cp,youtube.com,anc.net,anc.jw,anc.fw,anc.js,anc.vjs,anc.kal,anc.cri,anc.ban,anc.ov,anc.ply,anc.cl,anc.mpd",
+ten_sv:"MOBILE:,EM:,CP:,YT:,NET:,JW:,FW:,JS:,VJS:,KAL:,CRI:,BAN:,OVN:,PLY:,CRIVIP:,MPD:"}};
 
 function ancMedia() {
     url = window.location.href,
@@ -162,7 +161,7 @@ function ancMedia() {
         if (x.indexOf(sv[1]) != -1){ x = x.replace(/anc\.em\/http/gi, "http");  obj = DBOj(x)[1]; } //embed
         if (x.indexOf(sv[2]) != -1){ x = x.replace(/anc\.cp\/http/gi, "http");  obj = DBOj(x)[2]; } //clapper
         if (x.indexOf(sv[3]) != -1){ x = x.replace(/\#sub=/gi, "&sub=");  obj = DBOj(x)[3]  } //ply tubE 
-        if (x.indexOf(sv[4]) != -1){ x = x.replace(/\#sub=/gi, "&sub=");  obj = DBOj(x)[4]  } //YT
+        if (x.indexOf(sv[4]) != -1){ x = x.replace(/anc\.net\/http/gi, "http");  obj = DBOj(x)[4]  } //jwnetflix
         if (x.indexOf(sv[5]) != -1){ x = x.replace(/anc\.jw\/http/gi, "http"); obj = DBOj(x)[5]; } //jw
         if (x.indexOf(sv[6]) != -1){x = x.replace(/anc\.fw\/http/gi,"http");obj = DBOj(x)[6]} //fw
         if (x.indexOf(sv[7]) != -1){x = x.replace(/anc\.js\/http/gi,"http");obj = DBOj(x)[7]} //js
@@ -172,7 +171,8 @@ function ancMedia() {
         if (x.indexOf(sv[11]) != -1){x = x.replace(/anc\.ban\/http/gi, "http");  obj = DBOj(x)[11]; } //embed ban
         if (x.indexOf(sv[12]) != -1){x = x.replace(/anc\.ov\/http/gi, "http");  obj = DBOj(x)[12]; } //oven player
         if (x.indexOf(sv[13]) != -1){x = x.replace(/anc\.ply\/http/gi, "http");  obj = DBOj(x)[13]; } //PLY player
-         if (x.indexOf(sv[14]) != -1){ x = x.replace(/\#sub=/gi, "&sub=");  obj = DBOj(x)[14]  } //crichd vip
+        if (x.indexOf(sv[14]) != -1){ x = x.replace(/anc\.cl\/http/gi, "http");  obj = DBOj(x)[14]  } //crichd vip
+        if (x.indexOf(sv[15]) != -1){x = x.replace(/anc\.mpd\/http/gi, "http");  obj = DBOj(x)[14]; } //mpd jw
         this.fu("anc_pl", obj)
     };
     var DBOj = function (x) {
@@ -186,9 +186,9 @@ function ancMedia() {
 // 2 clapper 
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/cphd.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 //3 PLY
-'<link href="//cdn.plyr.io/3.6.8/plyr.css" rel="stylesheet"></link><div id="player" data-plyr-provider="youtube" ' + x + ' ></div>',
-//4 YT 
-'<div class="lazyYt" '+ x + ' ><div class="play"></div></div>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/ytply.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+//4 netflix jw
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/jwnetflix.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 //5 jw
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/jw.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 //6 fw
@@ -205,8 +205,10 @@ function ancMedia() {
 '<iframe class="player" width="100%" height="100%" src="//raw.githack.com/tvbd/tvbd.github.io/master/player/em.html?sv=' + x + '" scrolling="no" allowfullscreen="true" allowScriptAccess="always" frameborder="0"></iframe>',
 // 12 oven 
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/oven.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
-// 13 cp
+// 13 cl
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/clapper.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+// 13 mpd jw
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/jw2.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 
         ];
     }
