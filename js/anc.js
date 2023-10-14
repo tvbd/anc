@@ -200,7 +200,7 @@ function ancMedia() {
 // 9 kaltura
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/kaltura.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 10 cri 
-'<iframe class="player" src="//raw.githack.com/tvbd/tvbd.github.io/master/player/cri.html?sv='+x +'" width="100%" height="100%" scrolling="no" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+'<iframe class="player" src="//raw.githack.com/tvbd/stream/main/player/cric.html?sv='+x +'" width="100%" height="100%" scrolling="no" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
 // 11 ban
 '<iframe class="player" width="100%" height="100%" src="//raw.githack.com/tvbd/tvbd.github.io/master/player/em.html?sv=' + x + '" scrolling="no" allowfullscreen="true" allowScriptAccess="always" frameborder="0"></iframe>',
 // 12 oven 
