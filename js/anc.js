@@ -208,7 +208,7 @@ function ancMedia() {
 // 13 cl
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/clapper.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 13 mpd jw
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/jw2.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/jwmpd.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 
         ];
     }
