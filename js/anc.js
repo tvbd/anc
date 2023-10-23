@@ -196,7 +196,7 @@ function ancMedia() {
 // 7 playerjs
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/js.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 8 vjs
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/vjs.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/videojs/index.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 9 kaltura
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/kaltura.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 10 cri 
