@@ -180,7 +180,7 @@ function ancMedia() {
         qua = '<div class="logoplayer"></div>';
         return obj = [
 // 0 mobilw 
-'<video autoplay="true" controls="yes" src=' + x + ' width="100%" height="auto"></video>',
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/mb.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',         
 // 1 EM 
 '<iframe class="player" src=' + x + ' autoplay=' + auto + ' width="100%" height="100%" allowfullscreen="true" allowScriptAccess="always" frameborder="0" scrolling="yes"/></iframe>',
 // 2 clapper 
