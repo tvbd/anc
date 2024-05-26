@@ -170,7 +170,7 @@ function ancMedia() {
         if (x.indexOf(sv[10]) != -1){x = x.replace(/anc\.cri\//gi,"");obj = DBOj(x)[10]} //crichd
         if (x.indexOf(sv[11]) != -1){x = x.replace(/anc\.ban\/http/gi, "http");  obj = DBOj(x)[11]; } //embed ban
         if (x.indexOf(sv[12]) != -1){x = x.replace(/anc\.ov\/http/gi, "http");  obj = DBOj(x)[12]; } //oven player
-        if (x.indexOf(sv[13]) != -1){x = x.replace(/anc\.ply\/http/gi, "http");  obj = DBOj(x)[13]; } //PLY player
+        if (x.indexOf(sv[13]) != -1){x = x.replace(/anc\.ply\/http/gi, "http");  obj = DBOj(x)[15]; } //PLY player
         if (x.indexOf(sv[14]) != -1){ x = x.replace(/anc\.cl\/http/gi, "http");  obj = DBOj(x)[14]  } //crichd vip
         if (x.indexOf(sv[15]) != -1){x = x.replace(/anc\.mpd\/http/gi, "http");  obj = DBOj(x)[14]; } //mpd jw
         this.fu("anc_pl", obj)
@@ -207,8 +207,10 @@ function ancMedia() {
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/oven.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 13 cl
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/clapper.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
-// 13 mpd jw
+// 14 mpd jw
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/jwmpd.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+// 15 plyr
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/plyr.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 
         ];
     }
