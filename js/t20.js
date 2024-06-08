@@ -181,37 +181,37 @@ function ancMedia() {
         qua = '<div class="logoplayer"></div>';
         return obj = [
 // 0 mobilw 
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/mb.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',         
+'<iframe class="player" width="100%" height="100%"  src="//rawcdn.githack.com/tvbd/stream/main/player/mb.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',         
 // 1 EM 
 '<iframe class="player" src=' + x + ' autoplay=' + auto + ' width="100%" height="100%" allowfullscreen="true" allowScriptAccess="always" frameborder="0" scrolling="yes"/></iframe>',
 // 2 clapper 
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/cphd.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//rawcdn.githack.com/tvbd/stream/main/player/cphd.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 //3 PLY
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/ytply.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//rawcdn.githack.com/tvbd/stream/main/player/ytply.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 //4 netflix jw
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/jwnetflix.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//rawcdn.githack.com/tvbd/stream/main/player/jwnetflix.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 //5 jw
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/jw.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//rawcdn.githack.com/tvbd/stream/main/player/jw.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 //6 fw
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/fw.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//rawcdn.githack.com/tvbd/stream/main/player/fw.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 7 playerjs
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/js.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//rawcdn.githack.com/tvbd/stream/main/player/js.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 8 vjs
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/videojs/index.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//rawcdn.githack.com/tvbd/stream/main/player/videojs/index.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 9 kaltura
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/kaltura.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//rawcdn.githack.com/tvbd/stream/main/player/kaltura.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 10 cri 
-'<iframe class="player" src="//raw.githack.com/tvbd/stream/main/player/cric.html?sv='+x +'" width="100%" height="100%" scrolling="no" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+'<iframe class="player" src="//rawcdn.githack.com/tvbd/stream/main/player/cric.html?sv='+x +'" width="100%" height="100%" scrolling="no" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
 // 11 ban
-'<iframe class="player" width="100%" height="100%" src="//raw.githack.com/tvbd/tvbd.github.io/master/player/em.html?sv=' + x + '" scrolling="no" allowfullscreen="true" allowScriptAccess="always" frameborder="0"></iframe>',
+'<iframe class="player" width="100%" height="100%" src="//rawcdn.githack.com/tvbd/tvbd.github.io/master/player/em.html?sv=' + x + '" scrolling="no" allowfullscreen="true" allowScriptAccess="always" frameborder="0"></iframe>',
 // 12 oven 
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/oven.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//rawcdn.githack.com/tvbd/stream/main/player/oven.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 13 cl
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/clapper.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//rawcdn.githack.com/tvbd/stream/main/player/clapper.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 14 mpd jw
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/jwmpd.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//rawcdn.githack.com/tvbd/stream/main/player/jwmpd.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 15 plyr
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/plyr.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
+'<iframe class="player" width="100%" height="100%"  src="//rawcdn.githack.com/tvbd/stream/main/player/plyr.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 16 gdplayer
 '<iframe class="player" width="100%" height="100%" src="https://en.gdplayertv.to/live-tv/' + x + '/?embed=true" scrolling="no" allowfullscreen="true" allowScriptAccess="always" frameborder="0"loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen; geolocation; web-share; speaker-selection; screen-wake-lock; idle-detection"></iframe>',
 
