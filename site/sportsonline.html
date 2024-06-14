@@ -34,17 +34,17 @@
 
 <div id='anc_data'>  
  <id>
- SPORT TV 1;anc.sp/channels/pt/sporttv1.php|SPORT TV 2;anc.sp/channels/pt/sporttv2.php|SPORT TV 3;anc.sp/channels/pt/sporttv3.php|
- SPORT TV 4;anc.sp/channels/pt/sporttv4.php| SPORT TV 5;anc.sp/channels/pt/sporttv5.php|ELEVEN SPORTS 1;anc.sp/channels/pt/eleven1.php|
-ELEVEN SPORTS 2;anc.sp/channels/pt/eleven2.php|ELEVEN SPORTS 3;anc.sp/channels/pt/eleven3.php|
- BENFICA TV;anc.sp/channels/pt/btv.php|
+ SPORT TV 1;anc.spo/channels/pt/sporttv1.php|SPORT TV 2;anc.sp/channels/pt/sporttv2.php|SPORT TV 3;anc.spo/channels/pt/sporttv3.php|
+ SPORT TV 4;anc.spo/channels/pt/sporttv4.php| SPORT TV 5;anc.sp/channels/pt/sporttv5.php|ELEVEN SPORTS 1;anc.spo/channels/pt/eleven1.php|
+ELEVEN SPORTS 2;anc.spo/channels/pt/eleven2.php|ELEVEN SPORTS 3;anc.spo/channels/pt/eleven3.php|
+ BENFICA TV;anc.spo/channels/pt/btv.php|
 </id>  
 </div> 
 
 <script type='text/javascript'>
 //<![CDATA[ 
 var img_player=document.querySelectorAll("#anc_data")[0].src,ancplayer={load:{width:"100%",height:"100%",player:"",proxy:"",skin:"",getlink:"",imgload:"//1.bp.blogspot.com/-zpoFzRJfpLA/YS9g_Fzen2I/AAAAAAAACVE/8tZjL-2cegsWg9mYJcdwh8xWrdRNEzKtwCLcBGAsYHQ/s0/itbd71.png",autoplay:"true",embedplay:"0",site:"ITBD71"},
-sv:{list_sv:"anc.sp",
+sv:{list_sv:"anc.spo",
 ten_sv:"SP:"}};
 //]]></script>
 <script type='text/javascript'>
@@ -205,7 +205,7 @@ function ancMedia() {
         }
     };
     this.load = function (x) {
-        if (x.indexOf(sv[0]) != -1){x = x.replace(/anc\.sp\/http/gi, "http");  obj = DBOj(x)[0]; } //embed cric
+        if (x.indexOf(sv[0]) != -1){x = x.replace(/anc\.spo\/http/gi, "http");  obj = DBOj(x)[0]; } //embed cric
         this.fu("anc_pl", obj)
     };
     var DBOj = function (x) {
