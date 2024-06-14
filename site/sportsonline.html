@@ -34,10 +34,10 @@
 
 <div id='anc_data'>  
  <id>
- SPORT TV 1;anc.sp/pt/sporttv1.php|SPORT TV 2;anc.sp/pt/sporttv2.php|SPORT TV 3;anc.sp/pt/sporttv3.php|
- SPORT TV 4;anc.sp/pt/sporttv4.php| SPORT TV 5;anc.sp/pt/sporttv5.php|ELEVEN SPORTS 1;anc.sp/pt/eleven1.php|
-ELEVEN SPORTS 2;anc.sp/pt/eleven2.php|ELEVEN SPORTS 3;anc.sp/pt/eleven3.php|
- BENFICA TV;anc.sp/pt/btv.php|
+ SPORT TV 1;anc.sp/channels/pt/sporttv1.php|SPORT TV 2;anc.sp/channels/pt/sporttv2.php|SPORT TV 3;anc.sp/channels/pt/sporttv3.php|
+ SPORT TV 4;anc.sp/channels/pt/sporttv4.php| SPORT TV 5;anc.sp/channels/pt/sporttv5.php|ELEVEN SPORTS 1;anc.sp/channels/pt/eleven1.php|
+ELEVEN SPORTS 2;anc.sp/channels/pt/eleven2.php|ELEVEN SPORTS 3;anc.sp/channels/pt/eleven3.php|
+ BENFICA TV;anc.sp/channels/pt/btv.php|
 </id>  
 </div> 
 
@@ -213,7 +213,7 @@ function ancMedia() {
         qua = '<div class="logoplayer"></div>';
         return obj = [
 // 0 ban
-'<iframe class="player" width="100%" height="100%" src="//sportsonline.si/channels/' + x +'" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',         
+'<iframe class="player" width="100%" height="100%" src="//sportsonline.si/' + x +'" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',         
 
 
         ];
