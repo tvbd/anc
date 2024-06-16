@@ -206,15 +206,13 @@ function ancMedia() {
 '<iframe class="player" width="100%" height="100%" src="//raw.githack.com/tvbd/tvbd.github.io/master/player/em.html?sv=' + x + '" scrolling="no" allowfullscreen="true" allowScriptAccess="always" frameborder="0"></iframe>',
 // 12 oven 
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/oven.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
-// 13 cl
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/clapper.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
-// 14 mpd jw
+// 13 mpd jw
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/jwmpd.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
-// 15 plyr
+// 14 plyr
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/plyr.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
-// 16 gdplayer
+// 15 gdplayer
 '<iframe class="player" width="100%" height="100%" src="https://en.gdplayertv.to/live-tv/' + x + '/?embed=true" scrolling="no" allowfullscreen="true" allowScriptAccess="always" frameborder="0"loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen; geolocation; web-share; speaker-selection; screen-wake-lock; idle-detection"></iframe>',
-// 17 site
+// 16 site
 '<iframe class="player" src=' + x + ' autoplay=' + auto + ' width="100%" height="100%" allowfullscreen="true" allowScriptAccess="always" frameborder="0" scrolling="yes"/></iframe>',
 
           
