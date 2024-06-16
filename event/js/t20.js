@@ -173,7 +173,7 @@ function ancMedia() {
         if (x.indexOf(sv[13]) != -1){x = x.replace(/anc\.ply\/http/gi, "http");  obj = DBOj(x)[13]; } //PLY player
         if (x.indexOf(sv[14]) != -1){x = x.replace(/anc\.mpd\/http/gi, "http");  obj = DBOj(x)[14]; } //mpd jw
         if (x.indexOf(sv[15]) != -1){x = x.replace(/anc\.gdt\/http/gi, "http");  obj = DBOj(x)[15]; } //gdtv
-        if (x.indexOf(sv[16) != -1){x = x.replace(/anc\.site\//gi,"");obj = DBOj(x)[16]} // site
+        if (x.indexOf(sv[16]) != -1){x = x.replace(/anc\.site\//gi,"");obj = DBOj(x)[16]} // site
         this.fu("anc_pl", obj)
     };
     var DBOj = function (x) {
