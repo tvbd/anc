@@ -1,6 +1,6 @@
 var img_player=document.querySelectorAll("#anc_data")[0].src,ancplayer={load:{width:"100%",height:"100%",player:"",proxy:"",skin:"",getlink:"",imgload:"//1.bp.blogspot.com/-zpoFzRJfpLA/YS9g_Fzen2I/AAAAAAAACVE/8tZjL-2cegsWg9mYJcdwh8xWrdRNEzKtwCLcBGAsYHQ/s0/itbd71.png",autoplay:"true",embedplay:"0",site:"TVBD"},
-sv:{list_sv:"anc.mb,anc.em,anc.cp,youtube.com,anc.net,anc.jw,anc.fw,anc.js,anc.vjs,anc.kal,anc.cri,anc.ban,anc.ov,anc.ply,anc.cri,anc.mpd,anc.gdt,anc.site",
-ten_sv:"MOBILE:,EM:,CP:,YT:,NET:,JW:,FW:,JS:,VJS:,KAL:,CRI:,BAN:,OVN:,PLY:,CRIVIP:,MPD:,GDTV:,Site:"}};
+sv:{list_sv:"anc.mb,anc.em,anc.cp,youtube.com,anc.net,anc.jw,anc.fw,anc.js,anc.vjs,anc.kal,anc.cri,anc.ban,anc.ov,anc.ply,anc.mpd,anc.gdt,anc.site",
+ten_sv:"MOBILE:,EM:,CP:,YT:,NET:,JW:,FW:,JS:,VJS:,KAL:,CRI:,BAN:,OVN:,PLY:,MPD:,GDTV:,Site:"}};
 
 function ancMedia() {
     url = window.location.href,
@@ -170,11 +170,10 @@ function ancMedia() {
         if (x.indexOf(sv[10]) != -1){x = x.replace(/anc\.cri\//gi,"");obj = DBOj(x)[10]} //crichd
         if (x.indexOf(sv[11]) != -1){x = x.replace(/anc\.ban\/http/gi, "http");  obj = DBOj(x)[11]; } //embed ban
         if (x.indexOf(sv[12]) != -1){x = x.replace(/anc\.ov\/http/gi, "http");  obj = DBOj(x)[12]; } //oven player
-        if (x.indexOf(sv[13]) != -1){x = x.replace(/anc\.ply\/http/gi, "http");  obj = DBOj(x)[15]; } //PLY player
-        if (x.indexOf(sv[14]) != -1){ x = x.replace(/anc\.cri\/http/gi, "http");  obj = DBOj(x)[10]  } //crichd vip
-        if (x.indexOf(sv[15]) != -1){x = x.replace(/anc\.mpd\/http/gi, "http");  obj = DBOj(x)[14]; } //mpd jw
-        if (x.indexOf(sv[16]) != -1){x = x.replace(/anc\.gdt\/http/gi, "http");  obj = DBOj(x)[16]; } //gdtv
-        if (x.indexOf(sv[17]) != -1){x = x.replace(/anc\.site\//gi,"");obj = DBOj(x)[17]} // site
+        if (x.indexOf(sv[13]) != -1){x = x.replace(/anc\.ply\/http/gi, "http");  obj = DBOj(x)[13]; } //PLY player
+        if (x.indexOf(sv[14]) != -1){x = x.replace(/anc\.mpd\/http/gi, "http");  obj = DBOj(x)[14]; } //mpd jw
+        if (x.indexOf(sv[15]) != -1){x = x.replace(/anc\.gdt\/http/gi, "http");  obj = DBOj(x)[15]; } //gdtv
+        if (x.indexOf(sv[16) != -1){x = x.replace(/anc\.site\//gi,"");obj = DBOj(x)[16]} // site
         this.fu("anc_pl", obj)
     };
     var DBOj = function (x) {
