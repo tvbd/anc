@@ -1,5 +1,5 @@
 var img_player=document.querySelectorAll("#anc_data")[0].src,ancplayer={load:{width:"100%",height:"100%",player:"",proxy:"",skin:"",getlink:"",imgload:"//1.bp.blogspot.com/-zpoFzRJfpLA/YS9g_Fzen2I/AAAAAAAACVE/8tZjL-2cegsWg9mYJcdwh8xWrdRNEzKtwCLcBGAsYHQ/s0/itbd71.png",autoplay:"true",embedplay:"0",site:"TVBD"},
-sv:{list_sv:"anc.em,anc.ban,anc.cp,anc.js,anc.vjs,,anc.jw,anc.ply,anc.gdt,anc.xyz,anc.vip",
+sv:{list_sv:"anc.em,anc.ban,anc.cp,anc.js,anc.vjs,anc.jw,anc.ply,anc.gdt,anc.xyz,anc.vip",
 ten_sv:"EM:,BAN:,CP:,JS:,VJS:,JW:,PLY:,GDT:,XYZ:,VIP:"}};
 
 function ancMedia() {
