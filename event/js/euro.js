@@ -158,12 +158,12 @@ function ancMedia() {
     };
     this.load = function (x) {
         
-      if (x.indexOf(sv[0]) != -1){ x = x.replace(/anc\.em\/http/gi, "http");  obj = DBOj(x)[0]; } //embed 
+        if (x.indexOf(sv[0]) != -1){ x = x.replace(/anc\.em\/http/gi, "http");  obj = DBOj(x)[0]; } //embed 
         if (x.indexOf(sv[1]) != -1){ x = x.replace(/anc\.ban\/http/gi, "http");  obj = DBOj(x)[1]; } //embed ban
         if (x.indexOf(sv[2]) != -1){ x = x.replace(/anc\.cp\/http/gi, "http");  obj = DBOj(x)[2]; } //clapper
         if (x.indexOf(sv[3]) != -1){ x = x.replace(/anc\.js\/http/gi,"http");obj = DBOj(x)[3]} //js
-        if (x.indexOf(sv[4]) != -1){ x = x.replace(/anc\.jw\/http/gi, "http"); obj = DBOj(x)[4]; } //jw
-        if (x.indexOf(sv[5]) != -1){ x = x.replace(/anc\.vjs\/http/gi,"http");obj = DBOj(x)[5]} //vjs
+        if (x.indexOf(sv[4]) != -1){ x = x.replace(/anc\.vjs\/http/gi, "http"); obj = DBOj(x)[4]; } //vjs
+        if (x.indexOf(sv[5]) != -1){ x = x.replace(/anc\.jw\/http/gi,"http");obj = DBOj(x)[5]} //JW
         if (x.indexOf(sv[6]) != -1){ x = x.replace(/anc\.ply\/http/gi, "http");  obj = DBOj(x)[6]; } //PLY player
         if (x.indexOf(sv[7]) != -1){ x = x.replace(/anc\.gdt\//gi, "");  obj = DBOj(x)[7]; } //gdtv
         if (x.indexOf(sv[8]) != -1){ x = x.replace(/anc\.xyz\//gi, "");  obj = DBOj(x)[8]; } //XYZ
@@ -186,8 +186,7 @@ function ancMedia() {
 // 4 vjs
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/videojs/index.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',                 
 //5 jw
-'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/jw.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
-
+'<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/jw.html?url='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 6 plyr
 '<iframe class="player" width="100%" height="100%"  src="//raw.githack.com/tvbd/stream/main/player/plyr.html?sv='+x +'"  scrolling="no" frameborder="0" allowfullscreen="true"></iframe>',
 // 7 gdplayer
