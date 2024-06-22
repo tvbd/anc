@@ -192,7 +192,7 @@ function ancMedia() {
 // 7 gdplayer
 '<iframe class="player" width="100%" height="100%" src="https://en.gdplayertv.to/live-tv/' + x + '/?embed=true" scrolling="no" allowfullscreen="true" allowScriptAccess="always" frameborder="0" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen; geolocation; web-share; speaker-selection; screen-wake-lock; idle-detection"></iframe>',
 // 7 xyz
-'<iframe class="player" width="100%" height="100%" src="https://watch.livecricketsl.xyz/sport/euro2024.php?id=' + x + '" scrolling="no" allowfullscreen="true" allowScriptAccess="always" frameborder="0"></iframe>',
+'<iframe class="player" width="100%" height="100%" src="https://watch.livecricketsl.xyz/' + x + '" scrolling="no" allowfullscreen="true" allowScriptAccess="always" frameborder="0"></iframe>',
 // 8 VIP
 '<iframe class="player" width="100%" height="100%" src="//raw.githack.com/tvbd/stream/main/ch/1.html?id=' + x + '" scrolling="no" allowfullscreen="true" allowScriptAccess="always" frameborder="0"></iframe>',          
           
